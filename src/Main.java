@@ -1,13 +1,12 @@
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        App[] apps = {
-                new App("GamePro", "AliceDev", 450, "Games", 50),
-                new App("SecureBank", "BadDev123", 300, "Finance", 10),
-                new App("HeavyApp", "TrustedDev", 600, "Utility", 20),
-                new App("FinanceBuddy", "JohnDev", 300, "Banking", 0),
-                new App("EnterpriseSuite", "ProCorp", 400, "Enterprise", 150),
-                new App("CheapTool", "ToolsInc", 120, "Utility", -5)
-        };
+        List<App> apps = Arrays.asList(
+                new App("SuperGame", "JohnDoe", 450, "Games", 20),
+                new App("MegaTool", "JaneDoe", 550, "Utility", 10),
+                new App("FinTrack", "BadDev", 400, "Finance", 5),
+                new App("EnterpriseSuite", "CorpDev", 300, "Enterprise", 150)
+        );
 
         for (App app : apps) {
             try {
@@ -18,7 +17,7 @@ public class Main {
                 System.out.println("Validation failed for " + app.appName + ": " + e.getMessage());
             } finally {
                 System.out.println("Validation completed for " + app.appName);
-                System.out.println("-------------------------------------------------");
+                System.out.println();
             }
         }
     }
