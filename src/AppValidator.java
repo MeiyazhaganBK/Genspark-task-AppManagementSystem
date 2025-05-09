@@ -10,7 +10,6 @@ import Exceptions.InvalidCategoryException;
 import Exceptions.PricingException;
 import Exceptions.DeveloperBannedException;
 
-
 class AppValidator {
     static List<String> allowedCategories = Arrays.asList("Games", "Utility", "Finance", "Enterprise");
     static List<String> bannedDevelopers = Arrays.asList("BadDev123", "HackerCorp");
