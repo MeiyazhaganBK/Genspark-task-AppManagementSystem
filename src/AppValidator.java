@@ -2,13 +2,8 @@ import Exceptions.AppSizeTooLargeException;
 import Exceptions.DeveloperBannedException;
 import Exceptions.InvalidCategoryException;
 import Exceptions.PricingException;
-
 import java.util.Arrays;
 import java.util.List;
-import Exceptions.AppSizeTooLargeException;
-import Exceptions.InvalidCategoryException;
-import Exceptions.PricingException;
-import Exceptions.DeveloperBannedException;
 
 class AppValidator {
     static List<String> allowedCategories = Arrays.asList("Games", "Utility", "Finance", "Enterprise");
